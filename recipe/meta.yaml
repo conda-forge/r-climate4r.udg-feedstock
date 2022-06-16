@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/climate4R.UDG/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 90fb7825dbcf0002a5bb59aeec89fbb2c4f63b0fb16bef68666052830aa648cf
+  sha256: e21d763f820cdddf9fde52e1e55299f61b6a389f34bfcecc76d5244403115396
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -28,12 +28,10 @@ requirements:
     - r-base
     - r-rcurl
     - r-loader.java
-    - r-rjava
   run:
     - r-base
     - r-rcurl
     - r-loader.java
-    - r-rjava
 
 test:
   commands:
