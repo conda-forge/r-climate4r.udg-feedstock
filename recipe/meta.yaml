@@ -1,4 +1,4 @@
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/climate4R.UDG/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: f50f2b79a5b9fc2f0bb28808bf599a5473a0925e1ddbcf2c739a421ed6d0d8d2
+  sha256: e21d763f820cdddf9fde52e1e55299f61b6a389f34bfcecc76d5244403115396
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -27,11 +27,11 @@ requirements:
   host:
     - r-base
     - r-rcurl
-    - r-rjava
+    - r-loader.java
   run:
     - r-base
     - r-rcurl
-    - r-rjava
+    - r-loader.java
 
 test:
   commands:
