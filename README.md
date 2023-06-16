@@ -1,11 +1,11 @@
-About r-climate4r.udg
-=====================
+About r-climate4r.udg-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-climate4r.udg-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/SantanderMetGroup/climate4R.UDG/wiki
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-climate4r.udg-feedstock/blob/main/LICENSE.txt)
 
 Summary: Enables harmonized access to either remote climate databases via UDG.
 
